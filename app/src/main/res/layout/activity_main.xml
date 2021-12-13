@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/bg_main"
+                    style="@style/bgImageview" />
+
+                <SearchView
+
+                    android:id="@+id/SearchView"
+                    style="@style/searchView" />
+                </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout"
+                style="@style/LiNear0">
+
+                <LinearLayout style="@style/LiNear01">
+
+                    <ImageView
+                        style="@style/imageView01"
+                        android:src="@drawable/money" />
+
+                    <TextView
+                        style="@style/textView01"
+                        android:text="@string/openPack" />
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/LiNear01">
+
+                    <ImageView
+                        style="@style/imageView01"
+                        android:src="@drawable/crown" />
+
+                    <TextView
+                        style="@style/textView01"
+                        android:text="@string/setScore" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/relativeLayout3"
+                style="@style/LiNearMain"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/LiNear1">
+
+                    <LinearLayout
+                        android:id="@+id/listFood"
+                        style="@style/LiNear2">
+
+                        <ImageView
+                            style="@style/imageLL"
+                            android:src="@drawable/diet" />
+
+                        <TextView
+                            style="@style/textViewLL"
+                            android:text="@string/food" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/LiNear2">
+
+                        <ImageView
+                            style="@style/imageLL"
+                            android:src="@drawable/shopping" />
+
+                        <TextView
+                            style="@style/textViewLL"
+                            android:text="@string/shop" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/LiNear2">
+
+                        <ImageView
+                            style="@style/imageLL"
+                            android:src="@drawable/delivery" />
+
+                        <TextView
+                            style="@style/textViewLL"
+                            android:text="@string/delivery" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/LiNear2">
+
+                        <ImageView
+                            style="@style/imageLL"
+                            android:src="@drawable/discount" />
+
+                        <TextView
+                            style="@style/textViewLL"
+                            android:text="@string/promotion" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/LiNear1">
+
+                    <LinearLayout style="@style/LiNear2">
+
+                        <ImageView
+                            style="@style/imageLL"
+                            android:src="@drawable/vehicle" />
+
+                        <TextView
+                            style="@style/textViewLL"
+                            android:text="@string/walkway" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/LiNear2">
+
+                        <ImageView
+                            style="@style/imageLL"
+                            android:src="@drawable/cash" />
+
+                        <TextView
+                            style="@style/textViewLL"
+                            android:text="@string/packages" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/LiNear2">
+
+                        <ImageView
+                            style="@style/imageLL"
+                            android:src="@drawable/cards" />
+
+                        <TextView
+                            style="@style/textViewLL"
+                            android:text="@string/card" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/LiNear2">
+
+                        <ImageView
+                            style="@style/imageLL"
+                            android:src="@drawable/ellipsis" />
+
+                        <TextView
+                            style="@style/textViewLL"
+                            android:text="@string/other" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/LinearLayout5"
+                style="@style/ShopLL"
+                android:layout_below="@id/relativeLayout3">
+
+                <TextView
+                    style="@style/ShopTextView"
+                    android:text="@string/Shop" />
+
+                <ImageView
+                    style="@style/ShopImageView"
+                    android:src="@drawable/arrows1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/LinearLayout6"
+                style="@style/SilderLL"
+                android:layout_below="@id/LinearLayout5">
+
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/imageSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_centerInParent="true"
+                    app:sliderAnimationDuration="600"
+                    app:sliderAutoCycleDirection="back_and_forth"
+                    app:sliderIndicatorAnimationDuration="600"
+                    app:sliderIndicatorEnabled="true"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorMargin="15dp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderScrollTimeInSec="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/MenuToYou"
+                style="@style/ShopLL"
+                android:layout_below="@+id/LinearLayout6">
+
+                <TextView
+                    style="@style/ShopTextView"
+                    android:text="@string/MenuYou" />
+
+                <ImageView
+                    style="@style/ShopImageView"
+                    android:src="@drawable/arrows1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/relativeLayout88"
+                style="@style/LiNearMain1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/MenuToYou">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/MorningFood"
+                style="@style/ShopLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout88"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    style="@style/ShopTextView"
+                    android:text="@string/MorningFood" />
+
+                <ImageView
+                    style="@style/ShopImageView"
+                    android:src="@drawable/arrows1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/MorningFoodLL"
+                style="@style/LiNearMain1"
+                android:layout_below="@+id/MorningFood"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/LinearLayout555"
+                style="@style/ShopLL"
+                android:layout_below="@id/MorningFoodLL">
+
+                <TextView
+                    style="@style/ShopTextView"
+                    android:text="@string/other_1" />
+
+                <ImageView
+                    style="@style/ShopImageView"
+                    android:src="@drawable/arrows1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout99999"
+                style="@style/SilderLL1"
+                android:layout_below="@id/LinearLayout555">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:src="@drawable/rox" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout5558"
+                style="@style/ShopLL"
+                android:layout_below="@id/LinearLayout99999">
+
+                <TextView
+                    style="@style/ShopTextView"
+                    android:text="@string/mega_sale_60" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/relativeLayout3545"
+                style="@style/LiNearMain03"
+                android:layout_below="@+id/LinearLayout5558"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/LiNear31">
+
+                    <LinearLayout
+                        style="@style/LiNear3"
+
+                        android:background="@drawable/bg_border">
+
+                        <ImageView
+                            style="@style/imageLL2"
+                            android:background="@drawable/bg_border"
+                            android:src="@drawable/bg_bd" />
+
+                        <TextView
+                            style="@style/textViewLL1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sale_30" />
+
+                        <TextView
+                            style="@style/textViewLL1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Todate" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/LiNear3"
+                        android:background="@drawable/bg_border">
+
+                        <ImageView
+                            style="@style/imageLL2"
+                            android:background="@drawable/bg_border"
+                            android:src="@drawable/bg_bd" />
+
+                        <TextView
+                            style="@style/textViewLL1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sale_30" />
+
+                        <TextView
+                            style="@style/textViewLL1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Todate" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout1234"
+                style="@style/ShopLL"
+                android:layout_below="@id/relativeLayout3545">
+
+                <TextView
+                    style="@style/ShopTextView"
+                    android:text="@string/ShopSale" />
+
+                <ImageView
+                    style="@style/ShopImageView"
+                    android:src="@drawable/arrows1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/relativeLayout3145"
+                style="@style/LiNearMain03"
+                android:layout_below="@+id/LinearLayout1234"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/LiNear31">
+
+                    <LinearLayout
+                        style="@style/LiNear3"
+
+                        android:background="@drawable/bg_border">
+
+                        <ImageView
+                            style="@style/imageLL2"
+                            android:background="@drawable/bg_border"
+                            android:src="@drawable/bg_bd" />
+
+                        <TextView
+                            style="@style/textViewLL1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/SaleByShop" />
+
+                        <TextView
+                            style="@style/textViewLL1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Todate" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/LiNear3"
+                        android:background="@drawable/bg_border">
+
+                        <ImageView
+                            style="@style/imageLL2"
+                            android:background="@drawable/bg_border"
+                            android:src="@drawable/bg_bd" />
+
+                        <TextView
+                            style="@style/textViewLL1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/SaleByShop" />
+
+                        <TextView
+                            style="@style/textViewLL1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Todate" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout2234"
+                style="@style/ShopLL"
+                android:layout_below="@id/relativeLayout3145">
+
+                <TextView
+                    style="@style/ShopTextView"
+                    android:text="สั่ง GrabMart" />
+
+                <ImageView
+                    style="@style/ShopImageView"
+                    android:src="@drawable/arrows1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/relativeLayout2145"
+                style="@style/LiNearMain04"
+
+                android:layout_below="@+id/LinearLayout2234"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/LiNear31">
+
+                    <LinearLayout
+                        style="@style/LiNear4"
+
+                        android:background="@drawable/bg_border">
+
+                        <ImageView
+                            style="@style/imageLL2"
+                            android:background="@drawable/bg_border"
+                            android:src="@drawable/bg_bd" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/LiNear4"
+
+                        android:background="@drawable/bg_border">
+
+                        <ImageView
+                            style="@style/imageLL2"
+                            android:background="@drawable/bg_border"
+                            android:src="@drawable/bg_bd" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/LiNear4"
+                        android:background="@drawable/bg_border">
+
+                        <ImageView
+                            style="@style/imageLL2"
+                            android:background="@drawable/bg_border"
+                            android:src="@drawable/bg_bd" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout style="@style/LiNearBottom">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            style="@style/Widget.AppCompat.Light.ActionBar.TabView.Inverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:theme="@style/fontItim"
+            app:labelVisibilityMode="labeled"
+            app:layout_behavior=".Helper.BottomNavigationBehavior"
+            app:menu="@menu/bottom_navigation_menu" />
+    </LinearLayout>
+</RelativeLayout>

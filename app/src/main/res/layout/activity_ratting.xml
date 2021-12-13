@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RattingActivity">
+
+    <LinearLayout
+        android:id="@+id/LiNearScore"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_color1">
+
+        <TextView
+            android:id="@+id/ScoreText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/itim"
+            android:text="ให้คะเเนน"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="352dp"
+        android:layout_height="522dp"
+        android:layout_below="@+id/LiNearScore"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="-116dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/bg_color2"
+        android:orientation="vertical">
+
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/black"
+            android:numStars="5"
+            android:progressTint="@color/yellow"
+            android:stepSize="1"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_edittext"
+            android:fontFamily="@font/itim"
+            android:hint="กรอกชื่อ/name"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/inputDetail"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_edittext"
+            android:fontFamily="@font/itim"
+            android:hint="รายละเอียด/detail"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btnScore"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_btn_score"
+            android:fontFamily="@font/itim"
+            android:text="ให้คะเเนน"
+            android:textSize="18dp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

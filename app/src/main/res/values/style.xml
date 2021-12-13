@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="fontItim">
+        <item name="android:fontFamily">@font/itim</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="searchView">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">46dp</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_marginStart">18dp</item>
+        <item name="android:layout_marginTop">28dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:background">@drawable/bg_search</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintHorizontal_bias">0.491</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">@+id/bg_main</item>
+    </style>
+
+    <style name="bgImageview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">95dp</item>
+        <item name="android:background">@drawable/bg_color</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+
+    <style name="LiNear0">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_below">@+id/bg_main</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+    </style>
+
+    <style name="LiNear01">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="imageView01">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="textView01">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="fontFamily">@font/itim</item>
+        <item name="android:textColor">@color/black1</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="LiNearMain">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">230dp</item>
+        <item name="android:layout_below">@+id/LinearLayout</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="layout_constraintEnd_toEndOf">@+id/LinearLayout</item>
+        <item name="layout_constraintStart_toStartOf">@+id/LinearLayout</item>
+        <item name="layout_constraintTop_toBottomOf">@+id/LinearLayout</item>
+        <item name="layout_constraintHorizontal_bias">1.0</item>
+    </style>
+
+
+    <style name="LiNear1">
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="LiNear2">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="imageLL">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">10dp</item>
+
+    </style>
+
+    <style name="textViewLL">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="fontFamily">@font/itim</item>
+        <item name="android:textColor">@color/black1</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="ShopLL">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="layout_constraintStart_toStartOf">@+id/relativeLayout3</item>
+    </style>
+
+    <style name="ShopTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="fontFamily">@font/itim</item>
+        <item name="android:textColor">@color/black1</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="ShopImageView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginTop">9dp</item>
+    </style>
+    <style name="SilderLL">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">250dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="LiNearBottom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="LiNear">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="LiNear11">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="LiNear21">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="imageLL1">
+        <item name="android:layout_width">wrap_content </item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">1dp</item>
+
+    </style>
+
+    <style name="textViewLL1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/itim</item>
+        <item name="android:textColor">@color/black1</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:paddingLeft">5dp</item>
+
+    </style>
+    <style name="LiNearMain1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@+id/LinearLayout</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="layout_constraintEnd_toEndOf">@+id/LinearLayout</item>
+        <item name="layout_constraintStart_toStartOf">@+id/LinearLayout</item>
+        <item name="layout_constraintTop_toBottomOf">@+id/LinearLayout</item>
+        <item name="layout_constraintHorizontal_bias">1.0</item>
+    </style>
+    <style name="SilderLL1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="imageLL2">
+        <item name="android:layout_width">match_parent </item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">1dp</item>
+
+    </style>
+    <style name="LiNear3">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">210dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="LiNear31">
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="LiNearMain03">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">240dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="layout_constraintEnd_toEndOf">@+id/LinearLayout</item>
+        <item name="layout_constraintStart_toStartOf">@+id/LinearLayout</item>
+        <item name="layout_constraintTop_toBottomOf">@+id/LinearLayout</item>
+        <item name="layout_constraintHorizontal_bias">1.0</item>
+    </style>
+    <style name="LiNear4">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="LiNearMain04">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">210dp</item>
+        <item name="android:layout_below">@+id/LinearLayout</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="layout_constraintEnd_toEndOf">@+id/LinearLayout</item>
+        <item name="layout_constraintStart_toStartOf">@+id/LinearLayout</item>
+        <item name="layout_constraintTop_toBottomOf">@+id/LinearLayout</item>
+        <item name="layout_constraintHorizontal_bias">1.0</item>
+    </style>
+    <style name="foodList">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="layout_constraintStart_toStartOf">@+id/relativeLayout3</item>
+    </style>
+</resources>

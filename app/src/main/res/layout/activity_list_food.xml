@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".ListFood">
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout5"
+        style="@style/foodList"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            style="@style/ShopTextView"
+            android:text="อาหาร 🔥" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/LinearLayout5"
+        android:layout_marginTop="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout6"
+        android:layout_below="@id/recyclerView"
+        style="@style/foodList"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-1dp">
+
+        <TextView
+            style="@style/ShopTextView"
+            android:text="อาหาร 🔥" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recyclerView2222"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/LinearLayout6"
+        android:layout_marginTop="10dp">
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

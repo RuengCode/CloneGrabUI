@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">CloneGrab</string>
+    <string name="home">หน้าเเรก</string>
+    <string name="list">รายการ</string>
+    <string name="pay">การชำระเงิน</string>
+    <string name="message">ข้อความ</string>
+    <string name="profile">บัญชี</string>
+    <string name="food">อาหาร</string>
+    <string name="shop">ร้านค้า</string>
+    <string name="delivery">ส่งด่วน</string>
+    <string name="promotion">โปรโมชัน</string>
+    <string name="walkway">เดินทาง</string>
+    <string name="packages">เเพ็กเกจ</string>
+    <string name="card">บัตรกำนัน</string>
+    <string name="other">เพิ่มเติม</string>
+    <string name="Shop">Shop Now</string>
+    <string name="MenuYou">เมนูสำหรับคุณ</string>
+    <string name="MorningFood">สั่งเมื้อเช้าจาก</string>
+    <string name="kg">ระยะทาง</string>
+    <string name="NameWater">น้ำ</string>
+    <string name="other_1">ศึกษาเพิ่มเติม</string>
+    <string name="market">ชื่อร้าน</string>
+    <string name="NameFood">ชื่ออาหาร</string>
+    <string name="price">ราคาอาหาร</string>
+    <string name="mega_sale_60">MEGA SALE ลดสูงสด 60%</string>
+    <string name="sale_30">ส่วนลด30%</string>
+    <string name="Todate">ถึงวันที่ 20/12/21</string>
+    <string name="ShopSale">ร้านลดแล้ว เราลดให้อีก</string>
+    <string name="SaleByShop">ชื่อร้านที่ลด</string>
+    <string name="openPack">เปิดใช้งานกระเป๋า</string>
+    <string name="setScore">0 คะแนน</string>
+</resources>
