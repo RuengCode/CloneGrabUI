@@ -44,5 +44,9 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     implementation 'wu.seal.jsontokotlin:library:3.6.1'
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+    implementation 'com.google.code.gson:gson:2.8.9'
+    implementation 'org.jetbrains.anko:anko:0.10.8'
+
 
 }

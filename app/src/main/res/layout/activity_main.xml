@@ -12,6 +12,7 @@
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/testId1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -41,6 +42,7 @@
                         android:src="@drawable/money" />
 
                     <TextView
+                        android:id="@+id/json_list"
                         style="@style/textView01"
                         android:text="@string/openPack" />
                 </LinearLayout>
@@ -177,6 +179,7 @@
                 android:layout_below="@id/relativeLayout3">
 
                 <TextView
+                    android:id="@+id/testId001"
                     style="@style/ShopTextView"
                     android:text="@string/Shop" />
 
