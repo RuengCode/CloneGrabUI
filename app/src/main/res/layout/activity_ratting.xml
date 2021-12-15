@@ -21,33 +21,29 @@
             android:text="ให้คะเเนน"
             android:textAlignment="center"
             android:textColor="#000"
-            android:textSize="30dp" />
+            android:textSize="40dp" />
     </LinearLayout>
 
     <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="352dp"
-        android:layout_height="522dp"
+        android:layout_width="356dp"
+        android:layout_height="536dp"
         android:layout_below="@+id/LiNearScore"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="39dp"
-        android:layout_marginTop="-116dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="-182dp"
+        android:layout_marginBottom="77dp"
         android:background="@drawable/bg_color2"
         android:orientation="vertical">
 
 
-        <RatingBar
-            android:id="@+id/ratingBar"
+        <com.hsalf.smileyrating.SmileyRating
+            android:id="@+id/smile_rating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
-            android:backgroundTint="@color/black"
-            android:numStars="5"
-            android:progressTint="@color/yellow"
-            android:stepSize="1"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <EditText

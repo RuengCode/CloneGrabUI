@@ -46,5 +46,10 @@ class MainActivity : AppCompatActivity() {
         imageSlider.startAutoCycle()
     }
 
+    fun rattingStar(item: android.view.MenuItem) {
+        val intent = Intent(this, RattingActivity::class.java)
+        startActivity(intent)
+    }
+
 
 }

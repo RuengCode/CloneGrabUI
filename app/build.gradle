@@ -46,7 +46,8 @@ dependencies {
     implementation 'wu.seal.jsontokotlin:library:3.6.1'
     implementation 'com.amitshekhar.android:android-networking:1.0.2'
     implementation 'com.google.code.gson:gson:2.8.9'
-    implementation 'org.jetbrains.anko:anko:0.10.8'
+    implementation 'com.github.sujithkanna:smileyrating:2.0.0'
+    implementation 'com.stepstone.apprating:app-rating:2.3.1'
 
 
 }

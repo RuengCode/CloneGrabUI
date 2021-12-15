@@ -25,7 +25,6 @@ class UserAdapter1(val context: Context, val items: ArrayList<UserModelClass1>) 
     override fun onBindViewHolder(holder: UserAdapter1.ViewHolder, position: Int) {
         val item = items.get(position)
 
-
         holder.nameFood.text = item.name
         holder.desFood.text = item.description
         holder.priceFood.text = item.price.toString()
@@ -45,7 +44,6 @@ class UserAdapter1(val context: Context, val items: ArrayList<UserModelClass1>) 
         val nameFood = view.findViewById<TextView>(R.id.nameFood)
         val priceFood = view.findViewById<TextView>(R.id.priceFood)
         val desFood = view.findViewById<TextView>(R.id.desFood)
-
         val imgFood = view.findViewById<ImageView>(R.id.imgFood)
 
     }
