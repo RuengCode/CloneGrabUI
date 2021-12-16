@@ -1,21 +1,14 @@
-package com.example.clonegrab
+package com.example.clonegrab.activity
 
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.*
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import com.example.clonegrab.R
 import com.example.clonegrab.adapter.MySliderImageAdapter
-import com.google.gson.Gson
 import com.smarteist.autoimageslider.SliderView
-import java.io.InputStream
-import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,6 +41,16 @@ class MainActivity : AppCompatActivity() {
 
     fun rattingStar(item: android.view.MenuItem) {
         val intent = Intent(this, RattingActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun listData(item: android.view.MenuItem) {
+        val intent = Intent(this, ApiActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun dataBase(item: android.view.MenuItem) {
+        val intent = Intent(this, SqliteActivity::class.java)
         startActivity(intent)
     }
 

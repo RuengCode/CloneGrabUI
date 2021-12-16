@@ -13,19 +13,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CloneGrab">
         <activity
-            android:name=".ShowActivity"
+            android:name=".activity.SqliteActivity"
             android:exported="false" />
         <activity
-            android:name=".Test1Activity"
+            android:name=".activity.DetailViewActivity"
             android:exported="false" />
         <activity
-            android:name=".RattingActivity"
+            android:name=".activity.ApiActivity"
             android:exported="false" />
         <activity
-            android:name=".ListFood"
+            android:name=".activity.ShowActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.Test1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.RattingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

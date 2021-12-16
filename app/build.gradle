@@ -44,10 +44,13 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     implementation 'wu.seal.jsontokotlin:library:3.6.1'
-    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+
     implementation 'com.google.code.gson:gson:2.8.9'
     implementation 'com.github.sujithkanna:smileyrating:2.0.0'
-    implementation 'com.stepstone.apprating:app-rating:2.3.1'
+    //call api
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+
 
 
 }

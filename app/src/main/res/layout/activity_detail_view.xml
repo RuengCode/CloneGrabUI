@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailViewActivity">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:fontFamily="@font/itim"
+        android:text="Detail View"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="59dp" />
+
+    <ImageView
+        android:background="@drawable/ic_launcher_background"
+        android:id="@+id/imageViewMain"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="189dp"/>
+
+    <TextView
+        android:text="Name"
+        android:id="@+id/txtNameMain"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/itim"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="250dp" />
+
+
+</androidx.cardview.widget.CardView>

@@ -1,9 +1,10 @@
-package com.example.clonegrab
+package com.example.clonegrab.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.clonegrab.R
 import com.example.clonegrab.adapter.UserAdapter1
 import com.example.clonegrab.model.UserModelClass1
 import org.json.JSONException

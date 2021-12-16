@@ -1,8 +1,9 @@
-package com.example.clonegrab
+package com.example.clonegrab.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import com.example.clonegrab.R
 
 class ShowActivity : AppCompatActivity() {
     private lateinit var txtUsername : TextView

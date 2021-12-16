@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_20"
+    tools:context=".activity.SqliteActivity">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/itim"
+        android:text="Database : Sqlite"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/LL005"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_color2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/itim"
+            android:text="เพิ่มข้อมูล"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputName1"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_edittext"
+            android:drawableLeft="@drawable/e_name1"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/itim"
+            android:hint="กรอกชื่อ/name"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/inputGame1"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edittext"
+            android:drawableLeft="@drawable/e_game1"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/itim"
+            android:hint="กรอกเกมที่ชอบ/game"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/inputEmail1"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edittext"
+            android:drawableLeft="@drawable/e_email1"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/itim"
+            android:hint="กรอกอีเมล/email"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="80dp">
+
+           <Button
+               android:id="@+id/btnInsert"
+               android:layout_width="100dp"
+               android:layout_height="50dp"
+               android:layout_gravity="center"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="10dp"
+               android:background="@drawable/bg_btn_score"
+               android:fontFamily="@font/itim"
+               android:text="Add"
+               android:textColor="@color/black"
+               android:textSize="16dp"
+               android:textStyle="bold" />
+           <Button
+               android:id="@+id/btnUpdate"
+               android:layout_marginLeft="10dp"
+               android:layout_width="100dp"
+               android:layout_height="50dp"
+               android:layout_gravity="center"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="10dp"
+               android:background="@drawable/bg_btn_score"
+               android:fontFamily="@font/itim"
+               android:text="Update"
+               android:textColor="@color/black"
+               android:textSize="16dp"
+               android:textStyle="bold" />
+
+           <Button
+               android:id="@+id/btnView"
+               android:layout_marginLeft="10dp"
+               android:layout_width="100dp"
+               android:layout_height="50dp"
+               android:layout_gravity="center"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="10dp"
+               android:background="@drawable/bg_btn_score"
+               android:fontFamily="@font/itim"
+               android:text="List"
+               android:textColor="@color/black"
+               android:textSize="16dp"
+               android:textStyle="bold" />
+       </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleAddData"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/LL005"/>
+</RelativeLayout>

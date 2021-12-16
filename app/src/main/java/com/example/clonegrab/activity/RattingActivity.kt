@@ -1,20 +1,13 @@
-package com.example.clonegrab
+package com.example.clonegrab.activity
 
-import android.content.ContentValues.TAG
 import android.content.Intent
-import android.graphics.drawable.LayerDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
-import android.widget.LinearLayout
-import android.widget.RatingBar
-import com.hsalf.smilerating.BaseRating.GREAT
+import com.example.clonegrab.R
 import com.hsalf.smilerating.SmileRating
-import com.hsalf.smileyrating.SmileyRating
-import com.hsalf.smileyrating.smileys.Good
 
 class RattingActivity : AppCompatActivity() {
     private var numStar = 0
@@ -25,13 +18,12 @@ class RattingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ratting)
 
-
         val btn = findViewById<Button>(R.id.btnScore)
 
         btn.setOnClickListener{
             editTxtName = findViewById(R.id.inputName)
             editTxtDetail = findViewById(R.id.inputDetail)
-            startActivity(Intent(this,ShowActivity::class.java)
+            startActivity(Intent(this, ShowActivity::class.java)
                 .putExtra("user",editTxtName.text.toString())
                 .putExtra("detail",editTxtDetail.text.toString()))
 
@@ -47,9 +39,4 @@ class RattingActivity : AppCompatActivity() {
             Log.d("Star",numStar.toString())
         }
     }
-
-
-
-
-
 }
