@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/bg_color2"
+    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/flagImg"
+        android:layout_width="116dp"
+        android:layout_height="98dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/coinId"
+            android:layout_marginTop="5dp"
+            android:textSize="16dp"
+            android:text="CoinID"
+            android:textColor="@color/black"
+            android:fontFamily="@font/itim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/coinName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/itim"
+            android:text="CoinName"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/coinType"
+            android:layout_marginTop="5dp"
+            android:textSize="16dp"
+            android:text="CoinType"
+            android:textColor="@color/black"
+            android:fontFamily="@font/itim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/coinPrice"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="16dp"
+            android:text="CoinPrice"
+            android:textColor="@color/black"
+            android:fontFamily="@font/itim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CloneGrab">
         <activity
+            android:name=".activity.MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.SqliteActivity"
             android:exported="false" />
         <activity
@@ -31,7 +34,7 @@
             android:name=".activity.RattingActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.MainActivity"
+            android:name=".activity.CallApiActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

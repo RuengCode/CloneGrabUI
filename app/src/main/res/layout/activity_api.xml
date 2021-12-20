@@ -2,26 +2,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     tools:context=".activity.ApiActivity">
 
-    <TextView
-        android:id="@+id/txtDatalist"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:textSize="30dp"
-        android:text="Data List"
-        android:textColor="@color/black"
-        android:textAlignment="center"
-        android:fontFamily="@font/itim"
-        android:layout_marginTop="20dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycleViewUser"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/txtDatalist"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"

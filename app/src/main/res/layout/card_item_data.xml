@@ -129,9 +129,11 @@
     </RelativeLayout>
 
     <Button
+        android:textSize="16dp"
+        android:background="@drawable/bg_delete"
         android:id="@+id/btnDelete"
         android:textAllCaps="false"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:fontFamily="@font/itim"
         android:text="ลบ"
         android:layout_gravity="center_vertical"

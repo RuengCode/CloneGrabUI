@@ -15,6 +15,7 @@ import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.lang.StringBuilder
 
 class ApiActivity : AppCompatActivity() {
     lateinit var myAdapter: MyAdapter
@@ -48,6 +49,7 @@ class ApiActivity : AppCompatActivity() {
                 response: Response<List<MyDataItem>?>
             ) {
                 val responseBody = response.body()!!
+
                 myAdapter = MyAdapter(baseContext, responseBody)
                 myAdapter.notifyDataSetChanged()
                 recycleviewUser = findViewById(R.id.recycleViewUser)
@@ -61,7 +63,7 @@ class ApiActivity : AppCompatActivity() {
                 Log.d(TAG, "Main" + t.message)
             }
         })
-
+        
     }
 
 }

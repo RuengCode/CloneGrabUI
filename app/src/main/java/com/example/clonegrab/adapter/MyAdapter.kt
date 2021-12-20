@@ -16,7 +16,8 @@ import com.squareup.picasso.Picasso
 
 class MyAdapter(
 
-    val context: Context, val userList: List<MyDataItem>) :
+    val context: Context, val userList: List<MyDataItem>
+) :
     RecyclerView.Adapter<MyAdapter.ViewHolder>() {
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 

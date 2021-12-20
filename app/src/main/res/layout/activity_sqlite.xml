@@ -137,8 +137,12 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycleAddData"
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="match_parent"
-        android:layout_below="@+id/LL005"/>
+        android:layout_below="@+id/LL005"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="1dp"
+        android:foregroundGravity="center" />
 </RelativeLayout>
