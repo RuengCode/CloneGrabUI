@@ -16,7 +16,7 @@
                 android:id="@+id/image_kub"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@color/black"/>
+                android:src="@drawable/dollar"/>
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"

@@ -6,6 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".activity.CallApiActivity">
 
+
+    <TextView
+        android:text="Test"
+        android:id="@+id/txView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/reCallApi"
         android:layout_width="match_parent"

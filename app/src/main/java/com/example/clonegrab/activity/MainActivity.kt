@@ -44,10 +44,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun listData(item: android.view.MenuItem) {
-        val intent = Intent(this, ApiActivity::class.java)
-        startActivity(intent)
-    }
+
 
     fun dataBase(item: android.view.MenuItem) {
         val intent = Intent(this, SqliteActivity::class.java)
