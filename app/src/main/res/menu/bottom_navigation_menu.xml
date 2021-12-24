@@ -8,19 +8,16 @@
     <item
         android:id="@+id/page_2"
         android:enabled="true"
-        android:onClick="rattingStar"
         android:icon="@drawable/list"
         android:title="@string/list"/>
     <item
         android:id="@+id/page_3"
         android:enabled="true"
-        android:onClick="listData"
         android:icon="@drawable/wallet"
         android:title="@string/pay"/>
     <item
         android:id="@+id/page_4"
         android:enabled="true"
-        android:onClick="dataBase"
         android:icon="@drawable/message"
         android:title="@string/message"/>
     <item

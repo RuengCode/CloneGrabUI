@@ -13,12 +13,16 @@ import com.example.clonegrab.model.DataModel
 class DataAdapter : RecyclerView.Adapter<DataAdapter.DataViewHolder>() {
     private var dataList : ArrayList<DataModel> = ArrayList()
     private var onClickItem: ((DataModel) -> Unit?)? = null
+    private var onClickDeleteItem: ((DataModel) -> Unit?)? = null
 
     fun addItem(items : ArrayList<DataModel>){
         this.dataList = items
         notifyDataSetChanged()
     }
     fun setOnClickItem(callback : (DataModel) -> Unit){
+        this.onClickItem = callback
+    }
+    fun setOnClickDeleteItem(callback : (DataModel) -> Unit){
         this.onClickItem = callback
     }
 
@@ -32,6 +36,9 @@ class DataAdapter : RecyclerView.Adapter<DataAdapter.DataViewHolder>() {
         holder.itemView.setOnClickListener{
             onClickItem?.invoke(data)
         }
+        holder.btnDelete.setOnClickListener{
+            onClickDeleteItem?.invoke(data)
+        }
     }
 
     override fun getItemCount(): Int {
@@ -42,7 +49,7 @@ class DataAdapter : RecyclerView.Adapter<DataAdapter.DataViewHolder>() {
         private var name = view.findViewById<TextView>(R.id.tvName)
         private var game = view.findViewById<TextView>(R.id.tvGame)
         private var email = view.findViewById<TextView>(R.id.tvEnail)
-        private var btnDelete = view.findViewById<Button>(R.id.btnDelete)
+        var btnDelete = view.findViewById<Button>(R.id.btnDelete)
 
         fun bindView(data:DataModel){
             id.text = data.id.toString()

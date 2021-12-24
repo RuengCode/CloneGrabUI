@@ -29,4 +29,6 @@
     <string name="SaleByShop">ชื่อร้านที่ลด</string>
     <string name="openPack">เปิดใช้งานกระเป๋า</string>
     <string name="setScore">0 คะแนน</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

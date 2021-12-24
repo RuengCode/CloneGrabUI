@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".activity.MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".TestFragment">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -17,9 +17,9 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-               <RelativeLayout
-                   android:layout_width="match_parent"
-                   android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:id="@+id/bg_main"
@@ -29,7 +29,7 @@
 
                     android:id="@+id/SearchView"
                     style="@style/searchView" />
-                </RelativeLayout>
+            </RelativeLayout>
 
             <LinearLayout
                 android:id="@+id/LinearLayout"
@@ -210,7 +210,6 @@
                     app:sliderIndicatorPadding="3dp"
                     app:sliderIndicatorRadius="2dp"
                     app:sliderScrollTimeInSec="1" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -499,19 +498,5 @@
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
-    <LinearLayout style="@style/LiNearBottom">
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_navigation"
-            style="@style/Widget.AppCompat.Light.ActionBar.TabView.Inverse"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:background="@color/white"
-            android:theme="@style/fontItim"
-            app:labelVisibilityMode="labeled"
-            app:layout_behavior=".Helper.BottomNavigationBehavior"
-            app:menu="@menu/bottom_navigation_menu" />
-    </LinearLayout>
-
-</RelativeLayout>
+</FrameLayout>

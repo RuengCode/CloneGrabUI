@@ -1,22 +1,33 @@
-package com.example.clonegrab.activity
+package com.example.clonegrab
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.*
-import com.example.clonegrab.R
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.LinearLayout
+import com.example.clonegrab.activity.Test1Activity
 import com.example.clonegrab.adapter.MySliderImageAdapter
 import com.smarteist.autoimageslider.SliderView
 
-class MainActivity : AppCompatActivity() {
+class TestFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        val listFood = findViewById<LinearLayout>(R.id.listFood)
+    }
 
-        val imageSlider = findViewById<SliderView>(R.id.imageSlider)
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+
+
+    ): View? {
+        val view =  inflater.inflate(R.layout.fragment_test, container, false)
+        val listFood = view.findViewById<LinearLayout>(R.id.listFood)
+
+        val imageSlider = view.findViewById<SliderView>(R.id.imageSlider)
 
         val imageList: ArrayList<String> = ArrayList()
         imageList.add("https://sv1.picz.in.th/images/2021/12/09/6DXXFu.jpg")
@@ -25,10 +36,10 @@ class MainActivity : AppCompatActivity() {
         setImageInSlider(imageList, imageSlider)
 
         listFood.setOnClickListener {
-            val intent = Intent(this, Test1Activity::class.java)
+            val intent = Intent(context, Test1Activity::class.java)
             startActivity(intent)
         }
-
+        return view
     }
 
     private fun setImageInSlider(images: ArrayList<String>, imageSlider: SliderView) {
@@ -38,8 +49,5 @@ class MainActivity : AppCompatActivity() {
         imageSlider.isAutoCycle = true
         imageSlider.startAutoCycle()
     }
-
-
-
 
 }

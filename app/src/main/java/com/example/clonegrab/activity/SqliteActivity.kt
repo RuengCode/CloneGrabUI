@@ -42,6 +42,9 @@ class SqliteActivity : AppCompatActivity() {
             edEmail.setText(it.email)
             data = it
         }
+        adapter?.setOnClickDeleteItem {
+
+        }
     }
 
     private fun updateData() {
@@ -78,7 +81,7 @@ class SqliteActivity : AppCompatActivity() {
     private fun addData() {
         val name = edName.text.toString()
         val game = edGame.text.toString()
-        var email = edEmail.text.toString()
+        val email = edEmail.text.toString()
 
         if (name.isEmpty() || game.isEmpty() || email.isEmpty()){
 
@@ -100,6 +103,9 @@ class SqliteActivity : AppCompatActivity() {
         edName.setText("")
         edGame.setText("")
         edEmail.setText("")
+
+    }
+    private fun deleteData(id : Int){
 
     }
     private fun initRecycleView(){

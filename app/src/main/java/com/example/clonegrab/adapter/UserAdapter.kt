@@ -18,38 +18,57 @@ import com.example.clonegrab.data.CoinsItem
 import com.squareup.picasso.Picasso
 
 
+class UserAdapter(private val list: ArrayList<CoinsItem>) :
+    RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
+    private lateinit var mListener: onItemClickListener
 
-class UserAdapter(private val  list : ArrayList<CoinsItem>) : RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
+    interface onItemClickListener {
+        fun onItemClick(position: Int)
 
-    inner class UserViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
+    }
+
+    fun setOnItemClickListener(listener: onItemClickListener) {
+        mListener = listener
+    }
+
+    inner class UserViewHolder(itemView: View, listener: onItemClickListener) :
+        RecyclerView.ViewHolder(itemView) {
 
         var userID: TextView
-        var title: TextView
+        var name: TextView
+        var coinType: TextView
+        var coinPrice: TextView
         var imgItem: ImageView
 
 
         init {
-            userID = itemView.findViewById(R.id.userID)
-            title = itemView.findViewById(R.id.title)
-            imgItem = itemView.findViewById(R.id.image_kub)
+            userID = itemView.findViewById(R.id.coinId)
+            name = itemView.findViewById(R.id.coinName)
+            coinType = itemView.findViewById(R.id.coinType)
+            coinPrice = itemView.findViewById(R.id.coinPrice)
+            imgItem = itemView.findViewById(R.id.flagImg)
 
+            itemView.setOnClickListener {
+                listener.onItemClick(adapterPosition)
+            }
         }
-
-
 
 
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.row_items,parent,false)
+        val view =
+            LayoutInflater.from(parent.context).inflate(R.layout.coins_list_row, parent, false)
 
-        return UserViewHolder(view)
+        return UserViewHolder(view, mListener)
     }
 
     override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
 
         holder.userID.text = list[position].id.toString()
-        holder.title.text = list[position].name
+        holder.name.text = list[position].name
+        holder.coinType.text = list[position].type
+        holder.coinPrice.text = list[position].price
 
 
         val imgItem = holder.imgItem.loadSvg(list[position].iconUrl!!)

@@ -1,4 +1,4 @@
-package com.example.clonegrab.retrofit
+package com.example.clonegrab.Interface
 
 import com.example.clonegrab.data.MyDataItem
 import com.example.clonegrab.model.UserResponse

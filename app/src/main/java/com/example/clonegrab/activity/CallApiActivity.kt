@@ -40,13 +40,15 @@ class CallApiActivity : AppCompatActivity() {
 
             override fun onResponse(call: Call<MyDataItem?>, response: Response<MyDataItem?>) {
                 val listResponse = response.body()?.data?.coins
-                for(i in 0 until (listResponse!!.size)){
+            for(i in 0 until (listResponse!!.size)){
                     val new = listResponse[i]
                     list.add(new!!)
                 }
+                list.sortBy {
+                    it.id
+                }
 //                listResponse?.let { list.addAll(it) }
                 val adapter = UserAdapter(list)
-
                 coinsRecyclerView.adapter = adapter
                 Log.d("Main", response.body().toString())
                 txView.text = response.code().toString()

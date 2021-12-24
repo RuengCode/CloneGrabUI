@@ -8,22 +8,25 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:usesCleartextTraffic="true"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CloneGrab">
+        android:theme="@style/Theme.CloneGrab"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".activity.TextToSpeechActivity"
+            android:exported="false" />
         <activity
             android:name=".activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CallApiActivity"
             android:exported="false" />
         <activity
             android:name=".activity.SqliteActivity"
             android:exported="false" />
         <activity
             android:name=".activity.DetailViewActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.ApiActivity"
             android:exported="false" />
         <activity
             android:name=".activity.ShowActivity"
@@ -35,7 +38,7 @@
             android:name=".activity.RattingActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.CallApiActivity"
+            android:name=".activity.CloneGrabActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
